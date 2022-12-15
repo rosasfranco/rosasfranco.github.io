@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;/*atributo para cuando halla muchas palabras se rompa en varias lineas*/
+} 
+
+
+.contenedor h3{
+    padding-bottom: 1rem;/*16 pix*/
+}
+
+.navbar-toggler-icon{
+    float: right;
+
+    margin: 0 15px 0 0;
+}
+
+.portafolio img{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    margin:auto;
+    display:block;
+}
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+
+
+
+.sobre-nosotros .contenido-textos{
+    /* Ancho */
+    width: 95%;
+}
+/* Galeria */
+
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+     overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+   height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.imagen-port .capa{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(222, 90, 90, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;/*lo ocultamos*/
+    text-align: center;
+}
+.imagen-port:hover > .capa{
+    opacity: 1;
+    visibility: visible;/*pasa el cursor y se activa*/
+}
+
+/*.imagen-port:hover > .capa h1{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imagen-port .capa h1{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imagen-port .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+8    max-width: 220px;
+    margin: auto;
+
+}*/
+.imagen-port:hover >img{
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.fondo-nav{
+    Background-color:red;
+    
+}
+
