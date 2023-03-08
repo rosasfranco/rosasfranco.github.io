@@ -1,186 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="La Turca" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-     <!-- Tipografia -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> 
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Modifica el tamaño computadora a celular -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
-    <title>La turca</title>
-
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <title>CV Maxi Gerónimo</title>
+    <script src="java script/eventos.js"></script>
 </head>
-
+                        <!--Acá empieza la botonera lateral-->
+<div class="botonera">
+    <a href="#personal"><img class="boton" src="img/personal.png" id="pers" onmousemove="enAmarillo1()" onmouseleave="enNegro1()" alt="informacion personal"> </a>
+    <a href="#laboral"><img class="boton" src="img/laboral.png" id="labo" onmousemove="enAmarillo2()" onmouseleave="enNegro2()" alt="informacion laboral"> </a>
+    <a href="#habilidades"><img class="boton" src="img/habilidades.png" id="habi" onmousemove="enAmarillo3()" onmouseleave="enNegro3()" alt="habilidades"> </a>
+    <a href="#educacion"><img class="boton" src="img/estudios.png" id="estu" onmousemove="enAmarillo4()" onmouseleave="enNegro4()" alt="estudios"> </a>
+</div>
 <body>
+                        <!--Acá empieza lo principal del CV-->
+<div class="degrade">
+    <div class="grilla">
+<div class="intro">
+    <div class="nombres">Franco Rosas</div>
+    <div class="bajada">Informatico</div>
+    <div class="descripcion">Técnico informático cursando ultimo año de la carrera de analista de sistemas en la UNPA-UARG  , y tambien cursando la tecnicatura en programacion a travez del programa de potrero digital, siendo becado y trabajando para la compania de CGC. </div>
+    
+</div>
+    <img src="https://cdn.pixabay.com/photo/2019/07/29/12/13/man-4370516_1280.png" class="perfil">
+    </div>
+</div> <!--Acá termina lo principal del cv-->
+                        <!--Acá empieza el contenido del CV-->  
+<div class="caja"  id="personal">
+    <div class="titulo">Información Personal</div>
+    <div class="text">    
+        <ul>
+            <li>Edad: 24</li>
+            <li>Residencia: Santa Cruz</li>
+            <li>Nacimiento: 09/06/1998</li>
+            <li>Nacionalidad: Argentina</li>
+            <li>Telefono: 2966-580122</li>
+            <li>E-mail:franco.r@hotmail.com</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="caja" id="laboral">
+    <div class="titulo">Experiencia Laboral</div>
+    <div class="text">    
+        <ul>
+            <li>2019 -2021 Reacondicimientos de equipos informaticos para el Instituto de Desarrollo y Vivienda</li>
+            <li>2021 - actualidad Director del area de informatica en Distribuidora Rosas</li>
+        </ul>
+    </div>  
+</div>
+    
+<div class="caja" id="habilidades">
+    <div class="titulo">Habilidades</div>
+    <div class="text">    
+        <ul>
+            <li>Programacion web</li>
+            <li>Programacion orientada a objetos</li>
+            <li>Redes y telecomunicaciones</li>
+            <li>Analisis y diseño</li>
+        </ul>
+    </div>
+</div>
 
-
-        <header>
-            <nav class="navbar navbar-expand-lg fondo-nav">
-              <div class="container-fluid">
-                <img src="/img/logo1.png" alt="logo" idth="25" height="30">
-                <a class="navbar-brand" href="#">La turca</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#quienes-somos">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#productos">Productos</a>
-                  </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </header>
-
-
-
-    <main>
-
-        <section id="carouselExampleControls banner" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner banner__contenido">
-              <div class="carousel-item active">
-                <img src="img/carrusel1.jpg" class="d-block w-100" alt="no hay imagien">
-              </div>
-              <div class="carousel-item ">
-                <img src="img/portada.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/carrusel3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="8prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </section>
-
-        <section id="quienes-somos" class="contenedor sobre-nosotros">
-            <h2 class="titulo">¿Quienes Somos?</h2>
-            <div class="contenedor-sobre-nosotros">
-                <div class="contenido-textos">
-                    <h3>La Turca</h3>
-                    <p>Somos una fiambreria ubicada en Rio Gallegos - Santa Cruz, cuyo objetivo es brindar un
-                        servicio de alta calidad para satisfacer a los paladares de nuestros clientes.
-                        Contamos con la representacion exclusiva de la linea Los Calvos, Tremblay y tambien con el
-                        Frigorifico Rafaela, los cuales estan Entre uno de los mejores a nivel nacional, asegurando
-                        la Excelente calidad de sus productos.
-                    </p>
-
-                </div>
-            </div>
-        </section>
-        <!-- productos-->
-        <section id="productos">
-            <div class="contenedor">
-                <h2 class="titulo">Productos</h2>
-                <h3> Quesos</h3>
-                <div class="galeria-port">
-                  <div class="imagen-port">
-                    <img src="img/img10.jpeg" alt="">
-                    <div class="capa">
-                      <h1></h1>
-                    </div>
-                  </div>
-
-                    <div class="imagen-port">
-                        <img src="img/img12.jpeg" alt="">
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img13.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="portafolio">
-            <div class="contenedor">
-                <h3>Fiambres</h3>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/img5.jpeg" alt="">
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img9.jpeg" alt="">
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img17.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-          
-        <section id="servicios" class="portafolio">
-           
-            <div class="contenedor">
-                <h2>Servicios</h2>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/img14.jpg" 2alt="">
-
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/envio gratis.png" alt="">
-
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-
-
-
-    </main>
-
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <div class="template-demo">
-            <a type="button" target="_blank" rel="noopener noreferrer"
-                href="https://www.facebook.com/profile.php?id=100087261191558&__cft__[0]=AZWz3u2R8kW8szB3CZXKMDfQdLVa_2M5tGxIw99L_C9_RKWQJIlva32qcscB_7uZw8sSiFcvNvkFACHwus0bWWiQ6Fs7djP3T7uEYo64BIKOVu55ind6SBZthnQPxIId0_Ux9iaTOBExpY808uZW9-bDy7QsqEZDp9cIdRExx-H1eg&__tn__=-]K-R"
-                class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook"></i></a>
-            <a type="button" target="_blank" rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=%2B5492966549003"
-                class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-whatsapp"></i></a>
-            <a type="button" target="_blank" rel="noopener noreferrer"
-                href="https://www.instagram.com/distribuidora_rosas/"
-                class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-
-        <h2 class="titulo-final"> Rio Gallegos, Santa Cruz, Argentina. 2022</h2>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
+<div class="caja" id="educacion">
+    <div class="titulo">Estudios</div>
+    <div class="text">    
+        <ul>
+            <li>2018 - actualidad / Analista de Sistemas</li>
+            <li>2021 - Programacion web front end </li>
+        </ul>
+    </div>
+</div>
+<div class="vacio"></div>
 </body>
+</html>
 
 </html>
